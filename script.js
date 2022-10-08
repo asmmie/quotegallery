@@ -7,6 +7,7 @@ const url = "https://api.quotable.io/random";
 const fadeIn = () => {
   [...fades].forEach((fade) => {
     fade.style.opacity = `1`;
+    fade.style.webkitTransition = `all 2.5s ease`;
     fade.style.transition = `all 2.5s ease`;
   });
 };
@@ -14,6 +15,7 @@ const fadeIn = () => {
 const fadeOut = () => {
   [...fades].forEach((fade) => {
     fade.style.opacity = `0`;
+    fade.style.webkitTransition = `all 2.5s ease`;
     fade.style.transition = `all 2.5s ease`;
   });
 };
